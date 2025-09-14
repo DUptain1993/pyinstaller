@@ -26,7 +26,7 @@ jobs:
 
     - name: Obfuscate code with PyArmor
       run: |
-        pyarmor gen --src=./ --entry=phantomnet-client.py obf_dist
+        pyarmor gen phantomnet-client.py obf_dist
 
     - name: Build executable with PyInstaller
       run: |
